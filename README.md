@@ -1,6 +1,6 @@
 # Discord Autoresponder - Comprehensive Documentation 🚀🤖
 
-<p align="center"><img src="https://img.shields.io/npm/v/discord-responder?style=for-the-badge"> <img src="https://img.shields.io/github/repo-size/Alpha5959/discord-responder?style=for-the-badge"> <img src="https://img.shields.io/npm/l/discord-responder?style=for-the-badge"> <img src="https://img.shields.io/npm/dt/discord-responder?style=for-the-badge"> <a href="https://discord.com/invite/Rw5gRVqSaK" target="_blank"> <img alt="Discord" src="https://img.shields.io/badge/Support-Click%20here-7289d9?style=for-the-badge&logo=discord">
+<p align="center"><img src="https://img.shields.io/npm/v/discord-autoresponder?style=for-the-badge"> <img src="https://img.shields.io/github/repo-size/Alpha5959/discord-autoresponder?style=for-the-badge"> <img src="https://img.shields.io/npm/l/discord-autoresponder?style=for-the-badge"> <img src="https://img.shields.io/npm/dt/discord-autoresponder?style=for-the-badge"> <a href="https://discord.com/invite/Rw5gRVqSaK" target="_blank"> <img alt="Discord" src="https://img.shields.io/badge/Support-Click%20here-7289d9?style=for-the-badge&logo=discord">
 
 ---
 
@@ -10,9 +10,9 @@ Welcome to the official documentation for **Discord Autoresponder**, an advanced
 
 ### Key Features 🌟
 
-- 🧠 Intelligent Autoresponses: Craft dynamic responses based on triggers, conditions, and user roles. 
-- 🔄 Dynamic Response Generation: Utilize asynchronous functions for dynamic content generation. 
-- 🎨 Customization Options: Tailor responses based on message content and customize embeds for rich messaging. 
+- 🧠 Intelligent Autoresponses: Craft dynamic responses based on triggers, conditions, and user roles.
+- 🔄 Dynamic Response Generation: Utilize asynchronous functions for dynamic content generation.
+- 🎨 Customization Options: Tailor responses based on message content and customize embeds for rich messaging.
 - 🔍 Automatic Update Checks: Autoresponder checks for updates and notifies you of new versions.
 
 ---
@@ -55,7 +55,7 @@ client.login("YOUR_BOT_TOKEN");
 ```javascript
 // Craft a VIP welcome based on user roles
 autoresponder.addAutoresponse("vip", (message) => {
-  if (message.member.roles.cache.some(role => role.name === "VIP")) {
+  if (message.member.roles.cache.some((role) => role.name === "VIP")) {
     return `Welcome, VIP ${message.author.username}!`;
   }
   return "Access denied.";
