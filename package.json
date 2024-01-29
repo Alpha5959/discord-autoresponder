@@ -1,0 +1,28 @@
+{
+  "name": "discord-autoresponder",
+  "version": "1.0.0",
+  "description": "Automate Discord bot replies with ease using discord-autoresponder for dynamic, custom trigger-based interactions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "autoresponder",
+    "discord-responder",
+    "discord-autoresponder"
+  ],
+  "author": "xkroenen",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alpha5959/discord-responder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Alpha5959/discord-responder/issues"
+  },
+  "homepage": "https://github.com/Alpha5959/discord-responder#readme"
+}
