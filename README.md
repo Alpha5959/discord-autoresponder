@@ -30,22 +30,22 @@ npm install discord-autoresponder
 ### Initializing Autoresponder
 
 ```javascript
-const { Client } = require("discord.js");
-const Autoresponder = require("discord-autoresponder");
+const { Client } = require('discord.js');
+const AutoResponder = require('discord-autoresponder');
 
 // Create a Discord.js client
 const client = new Client();
 
 // Set up Autoresponder with optional autoresponses
-const autoresponder = new Autoresponder(client, [
-  { trigger: "hello", response: "Hello there!" },
+const autoresponder = new AutoResponder(client, [
+  { trigger: 'hello', response: 'Hello there!' },
   // Add more autoresponses as needed
 ]);
 
 // Additional bot setup...
 
 // Launch the bot
-client.login("YOUR_BOT_TOKEN");
+client.login('YOUR_BOT_TOKEN');
 ```
 
 ## Advanced Features 🌟
@@ -54,11 +54,11 @@ client.login("YOUR_BOT_TOKEN");
 
 ```javascript
 // Craft a VIP welcome based on user roles
-autoresponder.addAutoresponse("vip", (message) => {
-  if (message.member.roles.cache.some((role) => role.name === "VIP")) {
+autoresponder.addAutoResponse('vip', (message) => {
+  if (message.member.roles.cache.some((role) => role.name === 'VIP')) {
     return `Welcome, VIP ${message.author.username}!`;
   }
-  return "Access denied.";
+  return 'Access denied.';
 });
 ```
 
@@ -66,7 +66,7 @@ autoresponder.addAutoresponse("vip", (message) => {
 
 ```javascript
 // Infuse dynamic responses using async functions
-autoresponder.addAutoresponse("asyncExample", async (message) => {
+autoresponder.addAutoResponse('asyncExample', async (message) => {
   const userData = await fetchUserData(message.author.id);
   return `Hello, ${userData.username}!`;
 });
@@ -76,12 +76,12 @@ autoresponder.addAutoresponse("asyncExample", async (message) => {
 
 ```javascript
 // Tailor responses based on message content
-autoresponder.addAutoresponse("customResponse", (message) => {
+autoresponder.addAutoResponse('customResponse', (message) => {
   const content = message.content.toLowerCase();
-  if (content.includes("greet")) {
-    return "Greetings!";
-  } else if (content.includes("farewell")) {
-    return "Farewell!";
+  if (content.includes('greet')) {
+    return 'Greetings!';
+  } else if (content.includes('farewell')) {
+    return 'Farewell!';
   }
   return null; // Silence if conditions are not met
 });
@@ -95,32 +95,32 @@ Autoresponder checks for updates and notifies you if a new version is available 
 
 ```javascript
 // Extend greetings to new members
-autoresponder.addAutoresponse("welcome", (message) => {
+autoresponder.addAutoResponse('welcome', (message) => {
   return `Welcome to the server, ${message.author.username}!`;
 });
 
 // Swiftly reply to specific keywords
-autoresponder.addAutoresponse("ping", "Pong!");
+autoresponder.addAutoResponse('ping', 'Pong!');
 
 // Bid farewell when a user leaves
-autoresponder.addAutoresponse("goodbye", "Goodbye, see you next time!");
+autoresponder.addAutoResponse('goodbye', 'Goodbye, see you next time!');
 
 // Craft condition-based responses
-autoresponder.addAutoresponse("customGreeting", (message) => {
+autoresponder.addAutoResponse('customGreeting', (message) => {
   const content = message.content.toLowerCase();
-  if (content.includes("good morning")) {
-    return "Good morning!";
-  } else if (content.includes("good night")) {
-    return "Good night!";
+  if (content.includes('good morning')) {
+    return 'Good morning!';
+  } else if (content.includes('good night')) {
+    return 'Good night!';
   }
   return null;
 });
 
 // Remove an autoresponse
-autoresponder.removeAutoresponse("triggerToRemove");
+autoresponder.removeAutoResponse('triggerToRemove');
 
 // Display a list of all autoresponses
-autoresponder.listAutoresponses();
+autoresponder.listAutoResponses();
 ```
 
 ---
