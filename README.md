@@ -1,6 +1,6 @@
 # Discord Autoresponder - Comprehensive Documentation 🚀🤖
 
-<p align="center"><img src="https://img.shields.io/npm/v/discord-autoresponder?style=for-the-badge"> <img src="https://img.shields.io/github/repo-size/Alpha5959/discord-autoresponder?style=for-the-badge"> <img src="https://img.shields.io/npm/l/discord-autoresponder?style=for-the-badge"> <img src="https://img.shields.io/npm/dt/discord-autoresponder?style=for-the-badge"> <a href="https://discord.com/invite/Rw5gRVqSaK" target="_blank"> <img alt="Discord" src="https://img.shields.io/badge/Support-Click%20here-7289d9?style=for-the-badge&logo=discord">
+<p align="center"><img src="https://img.shields.io/npm/v/discord-autoresponder?style=for-the-badge"> <img src="https://img.shields.io/github/repo-size/Alpha5959/discord-autoresponder?style=for-the-badge"> <img src="https://img.shields.io/npm/l/discord-autoresponder?style=for-the-badge"> <img src="https://img.shields.io/npm/dt/discord-autoresponder?style=for-the-badge"> <a href="https://discord.com/invite/Rw5gRVqSaK" target="_blank"> <img alt="Discord" src="https://img.shields.io/badge/Support-Click%20here-7289d9?style=for-the-badge&logo=discord"> <img src="https://img.shields.io/npm/v/discord-autoresponder?style=for-the-badge"> <img src="https://socket.dev/api/badge/npm/package/discord-autoresponder">
 
 ---
 
